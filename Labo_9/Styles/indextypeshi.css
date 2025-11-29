@@ -1,0 +1,74 @@
+/* Algemene stijlen voor de body */
+body {
+    margin: 10px;
+    font-size: 1.25em;
+    background-color: #0b0b0b; /* diepe donkere achtergrond */
+    color: #e0d7c6; /* gebroken wit, beetje oud papier gevoel */
+    font-family: "Garamond", "Georgia", serif; /* gothic/medieval vibe */
+}
+
+/* Container voor alle artikelen */
+main {
+    display: flex;
+    flex-direction: column; /* vier onder elkaar */
+    gap: 20px; /* meer ruimte voor dramatisch effect */
+}
+
+/* Algemene artikel-stijlen */
+article {
+    background-color: #1a1a1a; /* iets lichtere donkerkleur */
+    border: 1px solid #444; /* subtiele rand, grijsachtig */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* donker schaduweffect */
+    padding: 20px;
+    border-radius: 5px; /* lichte afgeronde hoeken */
+    overflow: hidden; /* zorgt dat floats netjes blijven */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect voor dramatiek */
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+}
+
+/* Afbeeldingen binnen artikelen */
+article img {
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 10px 10px 0;
+    border: 1px solid #333;
+    border-radius: 3px;
+    float: left; /* standaard links, kan per artikel wisselen via nth-child */
+}
+
+/* Afbeelding rechts bij oneven artikels */
+article:nth-child(odd) img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+/* Titels */
+article h2 {
+    font-family: "Cinzel", "Garamond", serif; /* meer episch/gothic gevoel */
+    color: #d4af7f; /* goudachtig, zoals oude metalen */
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Paragraaf tekst */
+article p {
+    line-height: 1.6;
+    color: #e0d7c6;
+}
+
+/* Link-stijlen als je links wilt toevoegen */
+a {
+    color: #c0a060;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffdd99;
+    text-decoration: underline;
+}

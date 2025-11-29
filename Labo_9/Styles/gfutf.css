@@ -1,0 +1,43 @@
+/* Algemene stijlen voor de body */
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container voor alle artikelen */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Algemene artikel-stijlen */
+article {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+    overflow: hidden; /* zodat floating images correct werken */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Afbeeldingen binnen artikelen */
+article img {
+    max-width: 150px;
+    height: auto;
+    margin: 0 15px 15px 0; /* ruimte tussen afbeelding en tekst */
+}
+
+/* Voor afbeeldingen naar rechts */
+article.right img {
+    float: right;
+    margin: 0 0 15px 15px; /* ruimte aan de linkerkant van tekst */
+}
+
+/* Voor afbeeldingen naar links */
+article.left img {
+    float: left;
+    margin: 0 15px 15px 0; /* ruimte aan de rechterkant van tekst */
+}

@@ -2,12 +2,69 @@
 <html lang="nl">
 
 <head>
-    <title>Web Development I</title>
     <meta charset="UTF-8">
-
+    <title>Web Development I - Dark Souls</title>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
     <style>
-        body {background-color:darkred;}
+        /* General dark theme with image background */
+        body {
+            background: url('Labo_9/download.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #e6d8ad;
+            font-family: 'MedievalSharp', cursive, serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 3em;
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px #000000;
+        }
+
+        h2 {
+            color: #cc3333;
+            text-shadow: 1px 1px 3px #000000;
+        }
+
+        a {
+            color: #ff9900;
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        a:hover {
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px #000000;
+        }
+
+        ul, ol {
+            margin: 20px auto;
+            padding: 0;
+            width: 60%;
+            background-color: rgba(0, 0, 0, 0.6);
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Subtle glowing effect for Dark Souls bonfire feel */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 20%, rgba(255, 153, 51, 0.1), transparent 70%);
+            pointer-events: none;
+        }
     </style>
 </head>
 
@@ -17,10 +74,17 @@
     <li>
         <h2>Labo's</h2>
         <ol>
+            <li><a href="Labo_2/Inhoud.html">Labo 1</a></li>
+            <li><a href="Labo_2/Inhoud.html">Labo 2</a></li>
+            <li><a href="Labo_3/Inhoud2.html">Labo 3</a></li>
+            <li><a href="Labo_4/Labo_4.html">Labo 4</a></li>
+            <li><a href="Labo_4/Labo_4.html">Labo 5</a></li>
+            <li><a href="Labo_4/Labo_4.html">Labo 6</a></li>
+            <li><a href="Labo_4/Labo_4.html">Labo 7</a></li>
+            <li><a href="Labo_4/Labo_4.html">Labo 8 (lorum ipsum)</a></li>
+            <li><a href="Labo_9/index.html">Opdracht Positionering</a></li>
+            <li><a href="Labo_9/opdrachtairbus.html">Opdracht airbus</a></li>
 
-            <li><a href="Labo_2/Inhoud.html"> Labo 2 </a></li>
-            <li><a href="Labo_3/Inhoud2.html"> Labo 3 </a></li>
-            <li><a href="Labo_4/Labo_4.html "> Labo 4 </a></li>
         </ol>
     </li>
 </ul>

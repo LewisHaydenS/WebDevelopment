@@ -1,0 +1,19 @@
+/* 10px extra ruimte rond de twee kolommen */
+.outer-wrap {
+padding: 10px;           /* lege ruimte rondom de kolommen */
+}
+
+/* Container die twee 50%-kolommen bevat */
+.container {
+width: 100%;
+overflow: hidden;        /* clearfix voor floats */
+}
+
+/* De twee kolommen zelf */
+.column {
+width: 50%;              /* exact de helft */
+padding: 10px;           /* opdracht: 10px padding */
+border: 1px solid black; /* opdracht: 1px border */
+box-sizing: border-box;  /* zorgt ervoor dat width 50% blijft */
+float: left;             /* naast elkaar plaatsen */
+}
